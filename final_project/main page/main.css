@@ -1,0 +1,96 @@
+body{
+    background-image: url(/backgrounds/background.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.full_albums{
+    width: 350px;
+    height: 350px;
+}
+#The_Slow_Rush{
+    padding: 10px 0 50px 500px;
+}
+#Currents{
+    padding: 10px 0 50px 250px;
+} 
+#Lonerism{
+    padding: 10px 0 50px 500px;
+}
+#Innerspeaker{
+    padding: 10px 0 50px 250px;
+
+}
+
+.mini_albums{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    float: left;
+    padding: 20px 20px 0 100px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+.boderdline{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    align-items: center;
+    padding: 200px 800px 0 0;
+}
+#boderdline_video{
+    padding-left: 400px;
+    display: flex;
+    box-shadow: 10px 10px 5px rgb(190, 88, 20);
+}
+#borderline_text{
+    gap: 20;
+    color: rgb(255, 191, 72);
+}
+
+#new_person{
+    display: flex;
+    flex-direction: row-;
+    gap: 20px;
+    align-items: center;
+    padding: 100px 0 0 600px;
+}
+#new_person_video{
+    padding-left: 200px;
+    display: flex;
+    box-shadow: -10px -10px 5px rgb(0, 0, 0);
+}
+#new_person_text{
+    gap: 20px;
+    color: rgb(132, 0, 255);
+}
+
+#gosling{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    align-items: center;
+    padding: 100px 500px 0 0;
+}
+#ryan_gosling{
+    padding-left: 400px;
+    display: flex;
+    box-shadow: 10px 10px 5px rgb(57, 20, 190);
+}
+#ryan_gosling_text{
+    gap: 20;
+    color: rgb(33, 88, 114);
+
+}
+
+#who{
+    text-align: center;
+    font-family: "Michroma", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}

@@ -1,0 +1,176 @@
+body {
+    background-image: url(/backgrounds/slow_rush_background.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.home-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: rgba(255, 102, 0, 0.3);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    position: absolute;
+}
+.home-button svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+#The_Slow_Rush {
+    width: 300px;
+    height: 300px;
+    margin: 50px 0 0 10px;
+    box-shadow: 10px 5px 5px rgb(207, 65, 30);
+}
+
+h1 {
+    font-family: "Michroma", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(160, 112, 80);
+    margin: -300px 0 0 405px;
+    text-shadow: 10px 5px 5px rgb(42, 120, 134);
+    background-color: rgb(150, 84, 36);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+h2 {
+    font-family: "Michroma", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(162, 3, 0, 1);
+    margin: 0 0 0 405px;
+    background-color: rgb(150, 84, 36);
+}
+
+h3 {
+    font-family: "Michroma", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(61, 15, 15);
+    margin: 0 0 0 405px;
+    background-color: rgb(150, 84, 36);
+}
+
+#ratings {
+    margin: 0 0 0 405px;
+    font-weight: 1000;
+    color: #159aa3;
+    background-color: rgb(150, 84, 36);
+}
+
+
+#description{
+    margin: 0 0 0 405px;
+    font-weight: 800;
+    font-family:'Courier New', Courier, monospace;
+    color: rgb(34, 33, 95);
+    background-color: rgb(150, 84, 36);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.music_list {
+    font-family: "Michroma", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border: 2px solid ;
+    line-height: 30px;
+    margin: 70px 0 0 10px;
+    font-weight: 700;
+    color: rgb(164,56,32);
+    cursor: pointer;
+    background-color: rgb(70,33,26);
+    border-radius: 20px;
+}
+
+.music{
+    position: relative;
+    left: -25px;
+    box-shadow: rgb(207, 65, 30);
+}
+.music::-webkit-media-controls-panel{
+    background-color: rgb(206, 72, 39);
+}
+
+
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(156, 17, 17); 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 102, 0); 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 102, 0); 
+}
+
+.lyrics.open {
+    max-height: 300px;
+    padding-left: 5px;
+}
+
+.text{
+    padding-left: 5px;
+    text-indent: 64px;
+    margin: -50px 0;
+}
+
+#lyrics1, #lyrics2, #lyrics3, #lyrics4, #lyrics5, #lyrics6, #lyrics7, #lyrics8, #lyrics9, #lyrics10, #lyrics11, #lyrics12, #lyrics13, #lyrics14, #lyrics15, #lyrics16, #lyrics17, #lyrics18, #lyrics19, #lyrics20 {
+    font-family: "Michroma", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: none;
+    margin: 10px 0;
+    border: 1px solid rgb(241,211,178);
+    background-color: rgb(241,211,178);
+    max-height: 400px;
+    max-width: 600px;
+    overflow-y: auto;
+    white-space: pre-wrap;    
+}
+
+
+#The_Slow_Rush_Remix{
+    width: 300px;
+    height: 300px;
+    margin: 10px 0 0 10px;
+    box-shadow: 10px 5px 5px rgb(207, 65, 30);
+}
+
+.music_list_remixes{
+    font-family: "Michroma", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border: 2px solid ;
+    line-height: 30px;
+    margin: 200px 0 0 10px;
+    font-weight: 700;
+    color: rgb(164,56,32);
+    cursor: pointer;
+    background-color: rgb(70,33,26);
+    border-radius: 20px;
+}
+
+#aftertext{
+    font-weight: 1000;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 20 0 0 40px;
+    color: rgb(33, 165, 103);
+}
+
