@@ -1,0 +1,338 @@
+body {
+    background-color: rgb(43, 43, 43);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: "Michroma", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+#The_Slow_Rush:hover {
+    animation-name: tsl-glowing;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+#Currents:hover {
+    animation-name: c-glowing;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+#Lonerism:hover {
+    animation-name: l-glowing;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+#Innerspeaker:hover {
+    animation-name: i-glowing;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.full_albums {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+}
+
+.mini_albums {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.mini_albums:active {
+    transform: scale(0.95);
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.popup:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup-content {
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 400px;
+    max-height: 80vh;
+    overflow: auto;
+}
+
+#popup-neverender__content{
+    background-image: url(/final_project/backgrounds/Neverender-background.jpg);
+    color: wheat;
+    background-position: center;
+    background-size: cover;
+}
+
+#popup-no_more_lies__content{
+    background-image: url(/final_project/backgrounds/no_more_lies-background.jpg);
+    color: black;
+    background-position: center;
+    background-size: cover;
+}
+
+#popup-wings_of_time__content{
+    background-image: url(/final_project/backgrounds/Wings_Of_Time-background.jpg);
+    color: white;
+    background-position: center;
+    background-size: cover;
+}
+
+#popup-breathe_deeper__content{
+    background-image: url(/final_project/backgrounds/Breathe_deeper-background.jpg);
+    color: black;
+    background-position: center;
+    background-size: cover;
+}
+
+#popup-patience__content{
+    background-image: url(/final_project/backgrounds/patience-background.jpg);
+    color: white;
+    background-position: center;
+    background-size: cover;
+}
+
+#popup-eventually__content{
+    background-image: url(/final_project/backgrounds/eventually-background.jpg);
+    color: black;
+    background-position: center;
+    background-size: cover;
+}
+
+#popup-live_version__content{
+    background-image: url(/final_project/backgrounds/live_version-background.jpg);
+    color: wheat;
+    background-position: center;
+    background-size: cover;
+}
+
+#popup-sundown_syndrome__content{
+    background-image: url(/final_project/backgrounds/sundown_syndrome-background.jpg);
+    color: black;
+    background-position: center;
+    background-size: cover;
+}
+
+#popup-tame_impala__content{
+    background-image: url(/final_project/backgrounds/tame_impala-background.jpg);
+    color: black;
+    background-position: center;
+    background-size: cover;
+}
+
+#popup-tame_impala_remix__content{
+    background-image: url(/final_project/backgrounds/tame_impala_remix-background.jpg);
+    color: white;
+    background-position: center;
+    background-size: cover;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.close {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 15px;
+    background: #d35400;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@keyframes tsl-glowing {
+    to {
+        filter: drop-shadow(0 0 40px rgb(207, 65, 30));
+    }
+}
+
+@keyframes c-glowing {
+    to {
+        filter: drop-shadow(0 0 40px rgb(27, 17, 88));
+    }
+}
+
+@keyframes l-glowing {
+    to {
+        filter: drop-shadow(0 0 40px rgb(104, 155, 23));
+    }
+}
+
+@keyframes i-glowing {
+    to {
+        filter: drop-shadow(0 0 40px rgb(120, 136, 23));
+    }
+}
+
+@media (width < 600px) {
+    .full_albums {
+        max-width: 200px;
+    }
+
+    .mini_albums {
+        width: 140px;
+    }
+
+    .popup-content {
+        width: 95%;
+        max-height: 70vh;
+    }
+}
+
+@media (width < 600px) {
+    .main{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .LP{
+        text-align: center;
+    }
+    .full_albums {
+        max-width: 150px;
+        margin: 0.4em;
+    }
+
+    .EP{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .mini_albums {
+        width: 8em;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1920px) {
+    #The_Slow_Rush {
+        margin: 2% 0 1% 20%;
+    }
+    
+    #Currents {
+        margin: 0 0 1% 10%;
+    } 
+    
+    #Lonerism {
+        margin: 0 0 1% 20%;
+    }
+    
+    #Innerspeaker {
+        margin: 0 0 1% 10%;
+    }
+
+    .full_albums{
+        margin: 10px; 
+    }
+
+    .LP {
+        max-width: 1400px;
+        max-height: 1400px;
+    }
+
+    .EP{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 80%;
+    }
+
+    .mini_albums {
+        width: 220px;
+    }
+
+    .popup-content {
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 2560px) {
+    .main {
+        max-width: 2400px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 50px;
+        margin: 0 auto;
+    }
+
+    .LP, .EP {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+        width: 100%;
+    }
+
+    .full_albums {
+        width: 700px; 
+    }
+
+    .mini_albums {
+        width: 520px; 
+        height: auto;
+        margin: 15px;
+        cursor: pointer;
+        border-radius: 20px;
+        transition: transform 0.3s ease;
+    }
+
+    .mini_albums:hover {
+        transform: scale(1.1);
+    }
+
+    .popup-content {
+        max-width: 1400px; 
+        font-size: 32px; 
+        padding: 50px;
+    }
+    
+    .close {
+        font-size: 32px; 
+        padding: 12px 30px;
+    }
+}
+
+

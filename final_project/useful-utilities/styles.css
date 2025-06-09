@@ -1,0 +1,134 @@
+body {
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Michroma", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.home-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 15px;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  position: absolute;
+}
+
+.home-button svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.album-cover {
+  width: 300px;
+  height: 300px;
+  margin: 50px 0 0 10px;
+}
+
+h1 {
+  margin: -300px 0 0 400px;
+  padding-left: 0.5em;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+h2 {
+  margin: 0 0 0 400px;
+  padding-left: 0.7em;
+}
+
+h3 {
+  margin: 0 0 0 400px;
+  padding-left: 1em;
+}
+
+#ratings {
+  margin: 0 0 0 400px;
+  font-weight: 1000;
+  padding-left: 1em;
+}
+
+#description{
+  margin: 0 0 0 400px;
+  padding-left: 1em;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+
+.music_list {
+  border: 2px solid ;
+  line-height: 30px;
+  margin: 100px 0 0 10px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.music{
+  position: relative;
+  left: -25px;
+}
+
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+}
+
+
+.lyrics.open {
+  max-height: 300px;
+  padding: 20px;
+}
+
+.text{
+  padding-left: 5px;
+  text-indent: 71.5px;
+  margin: -50px 0;
+}
+
+#lyrics1, #lyrics2, #lyrics3, #lyrics4, #lyrics5, #lyrics6, #lyrics7, #lyrics8, #lyrics9, #lyrics10, #lyrics11, #lyrics12, #lyrics13, #lyrics14, #lyrics15, #lyrics16, #lyrics17, #lyrics18, #lyrics19, #lyrics20  {
+  display: none;
+  margin: 10px 0;
+  padding: 10px;
+  max-height: 800px;
+  max-width: 700px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+}
+
+
+.music_list_remixes {
+  border: 2px solid ;
+  line-height: 30px;
+  margin: 170px 0 0 10px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.music_list_anniversary{
+  border: 2px solid ;
+  line-height: 30px;
+  margin: 170px 0 0 10px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+#aftertext{
+  margin: 20 0 0 40px;
+}

@@ -1,0 +1,228 @@
+@import url(/final_project/useful-utilities/styles.css);
+
+:root{
+    --primary-color: rgb(128, 209, 160);
+    --info-background-color: rgb(32,147,138) ;
+    --lyrics-background-color: rgb(32,147,138);
+    --scroll-backgound-color: #1ba761; 
+}
+
+body {
+    background-image: url(/final_project/backgrounds/lonerism_background.jpg);
+}
+
+.home-button {
+    background-color: var(--info-background-color);
+    color: var(--primary-color);
+}
+
+#Lonerism {
+    box-shadow: 10px 5px 5px rgb(104, 155, 23);
+}
+
+
+h1 {
+    color: rgb(143, 255, 188);
+    text-shadow: 10px 5px 5px rgb(29, 22, 133);
+    background-color: var(--info-background-color) ;
+
+}
+
+h2 {
+    color: rgb(143, 255, 188);
+    background-color: var(--info-background-color) ;
+}
+
+h3 {
+    color: rgb(143, 255, 188);
+    background-color: var(--info-background-color) ;
+}
+
+#ratings {
+
+    color: rgb(143, 255, 188);
+    background-color: var(--info-background-color) ;
+}
+
+#description{
+    color: rgb(143, 255, 188);
+    background-color: var(--info-background-color) ;
+}
+
+.music_list {
+    color: rgb(106,177,134);
+    background-color: var(--lyrics-background-color) ;
+}
+
+.music::-webkit-media-controls-panel{
+    background-color: #20caa0;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--scroll-backgound-color); 
+}
+::-webkit-scrollbar-thumb {
+    background: var(--scroll-backgound-color); 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--scroll-backgound-color); 
+}
+
+#lyrics1, #lyrics2, #lyrics3, #lyrics4, #lyrics5, #lyrics6, #lyrics7, #lyrics8, #lyrics9, #lyrics10, #lyrics11, #lyrics12, #lyrics13, #lyrics14, #lyrics15, #lyrics16, #lyrics17, #lyrics18, #lyrics19, #lyrics20 {
+    border: 1px solid var(--primary-color);
+    background-color: var(--lyrics-background-color) ;
+    color: var(--primary-color);
+}
+
+#Lonerism_Remix{
+    box-shadow: 10px 5px 5px rgb(104, 155, 23);
+}
+
+.music_list_remixes{
+    color: rgb(106,177,134);
+    background-color: var(--lyrics-background-color) ;
+}
+
+#Lonerism_Anniversary{
+    box-shadow: 10px 5px 5px rgb(104, 155, 23);
+}
+
+.music_list_anniversary{
+    color: var(--primary-color);
+    background-color: var(--lyrics-background-color) ;
+}
+
+#aftertext{
+    font-weight: 1000;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 20 0 0 40px;
+    color: rgb(143, 255, 188);
+    background-color: var(--info-background-color) ;
+}
+
+@media (max-width: 600px) {
+    body {
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+    }
+    
+    .home-button {
+        position: relative;
+        display: block;
+        width: fit-content;
+        margin: 10px auto;
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    #Lonerism, #Lonerism_Remix, #Lonerism_Anniversary {
+        display: block;
+        margin: 20px auto;
+        width: 90%;
+        height: auto;
+        max-width: 300px;
+    }
+    
+    #lyrics1, #lyrics2, #lyrics3, #lyrics4, #lyrics5, #lyrics6, #lyrics7, #lyrics8, #lyrics9, #lyrics10, #lyrics11, #lyrics12, #lyrics13, #lyrics14, #lyrics15, #lyrics16, #lyrics17, #lyrics18, #lyrics19, #lyrics20 {
+        width: 300px;
+        height: 400px;    
+        text-align: center;
+    }
+
+
+    h1, h2, h3, #ratings, #description, #aftertext {
+        margin: 10px auto;
+        padding: 10px;
+        width: 90%;
+        text-align: center;
+        font-size: 18px;
+        border-radius: 10px;
+    }
+
+    .music_list, .music_list_remixes {
+        margin: 20px auto;
+        padding: 10px;
+        width: 90%;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .music {
+        width: 90%;
+        max-width: 300px;
+        display: block;
+        margin: 10px auto;
+    }
+
+    .lyrics.open {
+        max-width: 90%;
+        max-height: 250px;
+    }
+
+    .text {
+        padding-left: 10px;
+        text-indent: 20px;
+        margin: 0 auto;
+        text-align: justify;
+    }
+}
+
+@media (min-width: 2560px) {
+    body {
+        background-size: cover;
+        background-position: center;
+    }
+    
+    h1, h2, h3, #ratings, #description {
+        font-size: 100px; 
+        margin: 50px auto;
+        text-align: center;
+        max-width: 80%;
+    }    
+    #Lonerism, #Lonerism_Remix, #Lonerism_Anniversary {
+        width: 1200px; 
+        height: 1200px;
+        display: block;
+        margin: 50px auto;
+    }
+
+    #lyrics1, #lyrics2, #lyrics3, #lyrics4, #lyrics5, #lyrics6, #lyrics7, #lyrics8, #lyrics9, #lyrics10, #lyrics11, #lyrics12, #lyrics13, #lyrics14, #lyrics15, #lyrics16, #lyrics17, #lyrics18, #lyrics19, #lyrics20 {
+        min-width: 4000px;
+        min-height: 1000px;
+        text-align: center;
+    }
+    .music{
+        margin: 0.5em;
+        width: 4em;
+        height: 1em;
+    }
+    .music_list, .music_list_remixes {
+        font-size: 100px;
+        padding: 50px;
+        width: 80%;
+        margin: 40px auto;
+        text-align: center;
+    }
+    
+    .home-button {
+        font-size: 120px;
+        padding: 15px 30px;
+        top: 20px;
+        left: 20px;
+        border-radius: 30px;
+    }
+
+    .text {
+        font-size: 100px; 
+        line-height: 1.6;
+        max-width: 80%;
+        margin: 20px auto;
+    }
+    #aftertext{
+        font-size: 100px; 
+        line-height: 1.6;
+        max-width: 80%;
+        margin: 20px auto;
+    }
+}
